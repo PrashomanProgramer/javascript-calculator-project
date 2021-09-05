@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <input type="text" name="display"  id="filed">
+            <div class="buttons">
+                <input type="button" id="n7" value="7">
+                <input type="button" id="n8" value="8">
+                <input type="button" id="n9" value="9">
+                <input type="button" id="divaided" value="/"><br>
+                <input type="button" id="n4" value="4">
+                <input type="button" id="n5" value="5">
+                <input type="button" id="n6" value="6">
+                <input type="button" id="multipale" value="*"><br>
+                <input type="button" id="n1" value="1">
+                <input type="button" id="n2" value="2">
+                <input type="button" id="n3" value="3">
+                <input type="button" id="subtaction" value="-"><br>
+                <input type="button" id="dot" value=".">
+                <input type="button" id="n0" value="0">
+                <input type="button" id="addition" value="+">
+                <input type="button" id="clear" value="C"><br>
+                <input type="button" id="equal" value="=">
+            </div>
+        </form>
+
+        
+    </div>
+    <script>
+        const maintInput =document.getElementById('filed');
+        const num1 = document.getElementById('n1');
+        const num2 = document.getElementById('n2');
+        const num3 = document.getElementById('n3');
+        const num4 = document.getElementById('n4');
+        const num5 = document.getElementById('n5');
+        const num6 = document.getElementById('n6');
+        const num7 = document.getElementById('n7');
+        const num8 = document.getElementById('n8');
+        const num9 = document.getElementById('n9');
+        const num0 = document.getElementById('n0');
+        const dot = document.getElementById('dot');
+        const add = document.getElementById('addition');
+        const sub =document.getElementById('subtaction');
+        const multi = document.getElementById('multipale');
+        const divaid = document.getElementById('divaided');
+        const clear = document.getElementById('clear');
+        const equal = document.getElementById('equal');
+
+        clear.addEventListener('click', function(){
+            maintInput.value = " ";
+        })
+        num1.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number1 = num1.value;
+            const shownumber1 = maint1+ number1;
+            maintInput.value = shownumber1;
+        })
+        num2.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number2 = num2.value;
+            const shownumber2 = maint1+number2;
+            maintInput.value = shownumber2;
+        })
+        num3.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number3 = num3.value;
+            const shownumber3 = maint1+number3;
+            maintInput.value = shownumber3;
+        })
+        num4.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number4 = num4.value;
+            const shownumber4 = maint1+number4;
+            maintInput.value = shownumber4;
+        })
+        num5.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number5 = num5.value;
+            const shownumber5 =  maint1 + number5;
+            maintInput.value = shownumber5;
+            
+        })
+        num6.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number6 = num6.value;
+            const shownumber6 = maint1 + number6;
+            maintInput.value = shownumber6;
+            
+        })
+        num7.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number7 = num7.value;
+            const shownumber7 =  maint1 +number7;
+            maintInput.value = shownumber7;
+            
+        })
+        num8.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number8 = num8.value;
+            const shownumber8 =  maint1 + number8;
+            maintInput.value = shownumber8;
+            
+        })
+        num9.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number9 = num9.value;
+            const shownumber9 = maint1 +number9;
+            maintInput.value = shownumber9;
+            
+        })
+        num0.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const number0 = num0.value;
+            const shownumber0 = maint1 +number0;
+            maintInput.value = shownumber0;
+            
+        })
+        dot.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const dotvelo =dot.value;
+            const showDot = maint1 +dotvelo;
+            maintInput.value = showDot;
+            
+        })
+        sub.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const mainas = sub.value;
+            const showmainas = maint1 + mainas;
+            maintInput.value = showmainas;
+        })
+        add.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const pulas = add.value;
+            const showpluas = maint1 + pulas;
+            maintInput.value = showpluas;
+        })
+        multi.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const ghun = multi.value;
+            const showghun = maint1 + ghun;
+            maintInput.value = showghun;
+        })
+        divaid.addEventListener('click', function(){
+            const maint1 = maintInput.value;
+            const bag = divaid.value;
+            const showbag = maint1 + bag;
+            maintInput.value = showbag;
+        })
+        equal.addEventListener('click', function(){
+            maintInput.value = eval(maintInput.value )
+        })
+    </script>
+</body>
+</html>
